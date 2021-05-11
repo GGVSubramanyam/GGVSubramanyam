@@ -1,0 +1,36 @@
+- 👋 Hi, I’m @GGVSubramanyam
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+GGVSubramanyam/GGVSubramanyam is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+		int n,sum=0;
+		cin>>n;
+		int arr[n];
+		for(int i=0;i<n;i++)
+		  cin>>arr[i];
+		for(int i=0;i<n;i++)
+		{
+		  sum+=arr[i];	
+		  }  
+		 // cout<<sum;
+		int ls=0,rs=0;
+		for(int i=0;i<n;i++)
+		{
+			sum-=arr[i];
+			if(ls==sum)
+			  cout<<i+1;
+			else
+			  ls+=arr[i];  
+		}
+	}
